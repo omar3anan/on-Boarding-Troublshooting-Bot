@@ -26,7 +26,6 @@ In case of you need to run locally and use other services of QA and redis bus/ca
 ### Listeners
 
 By providing the suitable values of the environment variables to the SDK Configs object, the partner could listen to "TactfulBus" (which is considered a message queuing service) events. The available listeners are:
-
 - **INTENT**: Partner can listen to intent. After receiving a message and parsing it using the NLU-Service, we can get the intent of that message. Depending on the intent value, a specific flow will be triggered.
 - **MESSAGE**: By receiving any message from one of the messaging platforms (e.g., Facebook), the partner can listen to this message and take an action by triggering a specific flow.
 - **BUS_EVENTS** and **AUTOMATION_EVENTS**: Depend on firing events from TactfulBus or Automation-SDK-Partner itself, the target flow can be up and running.
